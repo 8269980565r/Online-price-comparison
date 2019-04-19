@@ -1,0 +1,225 @@
+        a:hover{
+            text-decoration:none;
+        }
+body{
+    background-color:black 
+}
+       #c1{
+           background-color:black;
+}
+
+
+        #cont2{
+           background:linear-gradient(0deg,black,#2B3856,black,#2B3856);
+            overflow-y:hidden;
+            
+        }
+        
+        
+        @keyframes example{
+            from {transform:rotate3d(1, 0,1,180deg);}
+            to {transform:rotate3d(0,0,0,0deg);}
+        }
+
+        #cols12,#cols13{
+            background-color:white;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+            height:250px;
+            width:100%;
+            margin-bottom:10px;
+            border-radius:4px;
+            overflow:hidden;
+            position:relative;
+            animation-name: example;
+            animation-duration:1.5s;
+            transform:rotate3d(0, 0,0,0deg);
+        }
+        
+        #cols12,#cols13:hover{
+            position:relative;
+            box-shadow: 0 8px 22px 0 rgba(0,0,0,0.6);
+            transition-duration:0.7;
+             
+        }  border-bottom:2px solid lightgray;
+}        
+
+        #imgs{
+        transition-duration:0.7s;
+            width:170px;
+            height:170px;
+            overflow:hidden;
+            text-align:center;
+            position:relative;
+        }
+#imgas:hover{
+    transition-duration:0.7s;
+    max-width:190px;
+    max-height:220px;
+}
+        
+        #imgas{
+            transition-duration:0.7s;
+            max-width:170px;
+            max-height:220px;
+           
+        }
+
+#price{
+    background:linear-gradient(45deg,purple,green);
+    width:50%;
+    position:relative;
+    float:right;
+    height:45px;
+    font-size:18px;
+    margin-right:13px;
+    border-radius:4px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+    
+}
+#price:hover{ 
+    background:linear-gradient(45deg,darkgreen,darkgreen);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+    
+}  
+#trow{
+    position:absolute;
+    width:100%;
+    bottom:10px;
+}
+
+#ttext{
+    color:white;
+    position:relative;
+    top:20%;
+}
+#rating{
+   
+    margin-top:10px; 
+    position:relative;
+}
+
+
+
+
+
+    .glyphicon{
+                display:none;
+            }
+            #sub{
+                display:block;
+            }
+
+
+.slider {
+    /* The name of the animation */
+    animation-name:slider;
+    -webkit-animation-name: slider; 
+    /* The duration of the animation */
+    animation-duration: 1s; 
+    -webkit-animation-duration: 1s;
+    /* Make the element visible */
+    animation-delay:1s;
+    visibility:visible; 
+    animation-fill-mode:both; 
+}
+
+
+@keyframes slider {
+    from {
+        opacity: 0;
+        transform: translateX(70%);
+       
+    } 
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+        
+    } 
+}
+@-webkit-keyframes slider {
+     from {
+        opacity: 0;
+        -webkit-transform: translateX(70%);
+         
+    } 
+    to {
+        opacity: 1;
+        -webkit-transform: translateX(0%);
+        
+    }
+}
+
+
+
+.slidel {
+    /* The name of the animation */
+    animation-name: slidel;
+    -webkit-animation-name: slidel; 
+    /* The duration of the animation */
+    animation-duration: 1s; 
+    -webkit-animation-duration: 1s;
+    /* Make the element visible */
+    visibility: visible; 
+    animation-delay:1s; 
+    animation-fill-mode:both; 
+}
+
+
+@keyframes slidel {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    } 
+}
+@-webkit-keyframes slidel {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+        
+        @media only screen and (max-width: 1000px) {
+            .glyphicon{
+                display:block;
+            }
+            #sub{
+                display:none;
+            }
+            #imgas{
+            max-width:170px;
+            max-height:160px;
+           
+        }
+            #cols12,#cols13{
+                height:350px;
+                border-bottom-right-radius:0px;
+                border-bottom-left-radius:0px;
+            }
+            #price{
+                border-radius:0px;
+                width:100%;
+                float:none; 
+                height:70px;
+                border:none; 
+                -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+              -moz-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+                         box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+
+            }
+            #trow{
+                 bottom:0%;
+            }
+            #ttext{
+                top:35%;
+            }
+        
+    
+        }
